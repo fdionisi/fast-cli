@@ -1,0 +1,15 @@
+[package]
+name = "fast-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fast"
+path = "src/main.rs"
+
+[dependencies]
+colored = "2"
+fast-cli-core = { path = "../core" }
+futures = "0.3.21"
+spinners-rs = "2.3.0"
+tokio = { version = "1.20.0", features = ["rt", "macros"] }

@@ -1,0 +1,12 @@
+[package]
+name = "fast-cli-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.58"
+futures = "0.3.21"
+headless_chrome = { git="https://github.com/atroche/rust-headless-chrome", tag="v1.0.0" }
+
+[dev-dependencies]
+tokio = { version = "1.20.0", features = ["full"]}
