@@ -1,0 +1,29 @@
+# Adapted from "https://github.com/starship/starship"
+# @see https://github.com/starship/starship/blob/82f68a0a393efc5d4bf38c13b64448d89e4bacd0/.github/workflows/deploy.yml
+
+name: Deploy
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  # Publish fast-cli to Crates.io
+  cargo_publish:
+    name: Publish Cargo Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: Setup | Rust
+        uses: actions-rs/toolchain@v1.0.7
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+
+      - name: Build | Publish
+        run: |
+          cargo publish --package fast-cli-core --token ${{ secrets.CRATES_IO_TOKEN }}
+          cargo publish --package fast-cli --token ${{ secrets.CRATES_IO_TOKEN }}

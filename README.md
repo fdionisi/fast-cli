@@ -29,6 +29,13 @@ fast
 
 ## Quick Install
 
+> **Note** to install `fast-cli` you have to use `cargo install`. Unfortunately
+> some dependencies requires openssl that
+> [was removed](https://github.com/cross-rs/cross/issues/229) from `cross-rs`.
+>
+> I'd be happy to provide cross-platform executables, but it's not on top of my
+> priority list. Contributions are most welcome.
+
 It is possible to install `fast-cli` in two flavours:
 
 - With Shell:
