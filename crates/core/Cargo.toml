@@ -4,6 +4,5 @@ description = "API implementation for running with fast.com"
 version = "0.0.0"
 edition = "2021"
 authors = ["Federico Dionisi <code@fdionisi.me>"]
-readme = "README.md"
 repository = "https://github.com/fdionisi/fast-cli/"
 license = "MIT"
