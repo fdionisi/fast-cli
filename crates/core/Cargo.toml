@@ -1,7 +1,11 @@
 [package]
 name = "fast-cli-core"
+description = "API implementation for running fast.com anywhere"
 version = "0.1.2"
 edition = "2021"
+authors = ["Federico Dionisi <code@fdionisi.me>"]
+repository = "https://github.com/fdionisi/fast-cli/"
+license = "MIT"
 
 [dependencies]
 anyhow = "1.0.58"

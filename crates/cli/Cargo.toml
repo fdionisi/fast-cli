@@ -1,7 +1,12 @@
 [package]
 name = "fast-cli"
+description = "fast.com, but from the terminal"
 version = "0.1.2"
 edition = "2021"
+authors = ["Federico Dionisi <code@fdionisi.me>"]
+readme = "../../README.md"
+repository = "https://github.com/fdionisi/fast-cli/"
+license = "MIT"
 
 [[bin]]
 name = "fast"
@@ -9,7 +14,12 @@ path = "src/main.rs"
 
 [dependencies]
 colored = "2"
-fast-cli-core = { path = "../core" }
+fast-cli-core = { path = "../core", version = "0.1.2" }
 futures = "0.3.21"
 spinners-rs = "2.3.0"
 tokio = { version = "1.20.0", features = ["rt", "macros"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"

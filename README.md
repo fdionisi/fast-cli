@@ -36,27 +36,12 @@ fast
 > I'd be happy to provide cross-platform executables, but it's not on top of my
 > priority list. Contributions are most welcome.
 
-It is possible to install `fast-cli` in two flavours:
-
-- With Shell:
-  ```sh
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/fdionisi/fast-cli/main/scripts/install)"
-  ```
-
-  To update the Fast CLI itself, rerun the above script. It will replace the
-  current version with the latest one.
-
-- With Cargo:
-  ```sh
-  cargo install fast-cli
-  ```
-
-  To update the Fast CLI with Cargo, remember to force re-installing the
-  binary.
-
-  ```sh
-  cargo install -f fast-cli
-  ```
+It is only possible to install `fast-cli` by building from source:
+```sh
+git clone git@github.com:fdionisi/fast-cli.git
+cd fdionisi/fast-cli
+cargo install --path crates/cli
+```
 
 ## License
 
