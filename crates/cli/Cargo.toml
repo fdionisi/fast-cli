@@ -1,7 +1,12 @@
 [package]
 name = "fast-cli"
+description = "fast.com, but from the terminal"
 version = "0.0.0"
 edition = "2021"
+authors = ["Federico Dionisi <code@fdionisi.me>"]
+readme = "README.md"
+repository = "https://github.com/fdionisi/fast-cli/"
+license = "MIT"
 
 [[bin]]
 name = "fast"
