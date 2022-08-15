@@ -10,7 +10,7 @@ license = "MIT"
 [dependencies]
 anyhow = "1.0.58"
 futures = "0.3.21"
-headless_chrome = { git="https://github.com/atroche/rust-headless-chrome", tag="v1.0.0" }
+headless_chrome = { git = "https://github.com/atroche/rust-headless-chrome", rev = "fd9ba91" }
 
 [dev-dependencies]
 tokio = { version = "1.20.0", features = ["full"] }

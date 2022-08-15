@@ -469,7 +469,7 @@ checksum = "607c8a29735385251a339424dd462993c0fed8fa09d378f259377df08c126022"
 [[package]]
 name = "headless_chrome"
 version = "0.9.0"
-source = "git+https://github.com/atroche/rust-headless-chrome?tag=v1.0.0#fd9ba91a248d61aa0c27a81013bcca169087bbc6"
+source = "git+https://github.com/atroche/rust-headless-chrome?rev=fd9ba91#fd9ba91a248d61aa0c27a81013bcca169087bbc6"
 dependencies = [
  "anyhow",
  "auto_generate_cdp",

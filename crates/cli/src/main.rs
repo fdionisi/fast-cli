@@ -96,8 +96,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         if !info.is_done() {
             spinner.set_message(&message);
         } else {
-            spinner.stop_with_message(format!("  {}", &message));
-            println!("");
+            spinner.stop_with_message(format!("  {}\n", &message));
         }
     }
 
