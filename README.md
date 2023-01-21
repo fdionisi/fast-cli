@@ -36,6 +36,17 @@ fast
 > I'd be happy to provide cross-platform executables, but it's not on top of my
 > priority list. Contributions are most welcome.
 
+```sh
+cargo install fast-cli
+```
+
+To update the Captain Hook with Cargo, remember to force re-installing the
+binary.
+
+```sh
+cargo install -f fast-cli
+```
+
 It is only possible to install `fast-cli` by building from source:
 ```sh
 git clone git@github.com:fdionisi/fast-cli.git

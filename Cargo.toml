@@ -3,3 +3,13 @@ members = [
     "crates/core",
     "crates/cli"
 ]
+
+[workspace.dependencies]
+anyhow = { version = "1.0.68" }
+futures = { version = "0.3.25" }
+tokio = { version = "1.24.2" }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
