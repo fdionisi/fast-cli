@@ -1,7 +1,7 @@
 [package]
 name = "fast-cli"
 description = "fast.com, but from the terminal"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 authors = ["Federico Dionisi <code@fdionisi.me>"]
 readme = "../../README.md"
@@ -14,7 +14,7 @@ path = "src/main.rs"
 
 [dependencies]
 colored = "2"
-fast-cli-core = { path = "../core", version = "0.1.4" }
+fast-cli-core = { path = "../core", version = "0.1.5" }
 futures = { workspace = true }
 spinners-rs = "2.3.0"
-tokio = { workspace = true , features = ["rt", "macros"] }
+tokio = { workspace = true , features = ["rt", "rt-multi-thread", "macros"] }

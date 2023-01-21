@@ -1,7 +1,7 @@
 [package]
 name = "fast-cli-core"
 description = "API implementation for running fast.com anywhere"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 authors = ["Federico Dionisi <code@fdionisi.me>"]
 repository = "https://github.com/fdionisi/fast-cli/"
